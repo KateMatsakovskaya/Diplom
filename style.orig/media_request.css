@@ -1,4 +1,20 @@
 
+@media (max-width: 1440px) {
+       .container1 .text_cont1 center{
+           padding: 0 auto;
+        height: 90%;
+        padding-top: 100px;
+        padding-bottom: 190px;
+    }
+    .center{
+        padding: 100px;
+    }
+    .container1 .text_cont1 h1 {
+        font-size: 172px;
+
+}
+}
+
 @media (max-width: 1233px) {
     .container3 .cards {
         justify-content: center;
@@ -34,6 +50,36 @@
 }
 
 @media (max-width: 1024px) {
+    .container1 .header .logo {
+        position: absolute;
+        z-index: 100;
+    }
+    .container1 .header .burger {
+        display: inline-block;
+        width: 30px;
+        top: 51px;
+        position: absolute;
+        z-index: 100;
+        right: 5%;
+        cursor: pointer;
+        border-radius: 6px;
+        height: 30px;
+        border: 1px solid white;
+    }
+    .container1 .header .burger i{
+        display: block;
+        width: 80%;
+        height: 4px;
+        margin: 3px;
+        background-color: white;
+    }
+    .container1 .header .burger i:first-child {
+        margin-top: 6px;
+    }
+    .container1 .show {
+        display: block;
+    }
+
     .container1 .header .menu,
     .container1 .header .head_right {
         display: none;
@@ -91,7 +137,7 @@
     .container5 .content_cont5 .carousel {
         padding-top: 40px;
         padding-bottom: 40px;
-        width: 100%;
+        max-width: 100%;
     }
     .container6 {
         flex-direction: column;

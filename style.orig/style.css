@@ -23,6 +23,8 @@ body {
     margin: 0 auto;
 }
 
+.burger{
+    display: none;}
 /* Старт container1 */
 
 .container1 {
@@ -181,6 +183,113 @@ body {
 .container1 .text_cont1 .btn_sign_up:hover,
 .container1 .text_cont1 .btn_sign_up:focus {
     background-color: #ffb9b9;
+}
+
+.container1 .burger {
+    display: none;
+}
+
+.container1 .menu_background {
+    display: none;
+    position: absolute;
+    background-color: rgba(237, 76, 92, 0.9);
+    width: 100%;
+    height: 100vh;
+    max-height: 766px;
+    left: 0;
+    top: 0;
+}
+
+.container1 .menu_background .menu {
+    margin-top: 117px;
+}
+
+.container1 .menu_background .menu ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-row-gap: 5px;
+}
+
+.container1 .menu_background .menu ul li {
+    padding: 5px 0;
+    text-align: end;
+}
+
+.container1 .menu_background .menu ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.container1 .menu_background .menu ul li a:hover,
+.container1 .menu_background .menu ul li a:focus,
+.container1 .menu_background .menu ul li a:active {
+    color: #ffb9b9;
+}
+
+.container1 .menu_background .head_right {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    margin-left: 5%;
+    margin-top: 5px;
+    margin-right: 5%;
+}
+
+.container1 .menu_background .head_right .language {
+    display: flex;
+    align-items: center;
+    width: 96px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.container1
+    .menu_background
+    .head_right
+    .language
+    .style_select_language
+    .select_language {
+    border-radius: 0;
+    background: transparent;
+    height: 34px;
+    padding: 5px;
+    border: 0;
+    font-size: 14px;
+    -webkit-appearance: none;
+    width: 55px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.container1 .menu_background .head_right .language .style_select_language {
+    height: 34px;
+    background: url(../img/cont1/arrow_select_language.png) no-repeat right;
+    width: 55px;
+}
+
+.container1 .menu_background .head_right .btn_login {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 11px 29px;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 5px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.container1 .menu_background .head_right .btn_login:hover,
+.container1 .menu_background .head_right .btn_login:focus {
+    color: #ffb9b9;
+    border-color: #ffb9b9;
 }
 
 /* Старт container2 */
@@ -690,17 +799,6 @@ body {
     border: 1px solid #ff5364;
     color: #ffb9b9;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .container7 {
     background-color: #fafafa;
